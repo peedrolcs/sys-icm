@@ -93,13 +93,19 @@
                   </Label>
                   <Label fx:id="lbIMC" text="00.00">
                      <VBox.margin>
-                        <Insets bottom="20.0" top="20.0" />
+                        <Insets bottom="15.0" top="15.0" />
                      </VBox.margin>
                      <font>
                         <Font size="96.0" />
                      </font>
                   </Label>
-                  <Label />
+                  <Label fx:id="lbClassificacao">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
                </children>
             </VBox>
          </children>

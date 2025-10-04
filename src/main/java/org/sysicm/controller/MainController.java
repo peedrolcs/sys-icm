@@ -16,6 +16,8 @@ public class MainController {
     public TextField txtPeso;
     @FXML
     public Label lbIMC;
+    @FXML
+    public Label lbClassificacao;
 
     Pessoa pessoa = new Pessoa();
 
@@ -28,7 +30,7 @@ public class MainController {
 
         df.applyPattern("#0.00");
         this.lbIMC.setText( df.format( this.pessoa.calcularIMC()) );
-
+        this.lbClassificacao.setText( this.pessoa.classificacaoIMC() );
 
     }
 }
