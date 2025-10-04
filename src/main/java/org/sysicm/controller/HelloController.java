@@ -1,4 +1,4 @@
-package org.sysicm;
+package org.sysicm.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
