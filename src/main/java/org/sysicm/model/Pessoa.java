@@ -1,6 +1,7 @@
 package org.sysicm.model;
 
 public class Pessoa {
+    private int id;
     private String nome;
     private float altura;
     private float peso;
@@ -11,7 +12,8 @@ public class Pessoa {
     public Pessoa() {
     }
 
-    public Pessoa(String nome, float altura, float peso, float imc) {
+    public Pessoa( int id,String nome, float altura, float peso, float imc) {
+        this.id = id;
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
@@ -19,6 +21,16 @@ public class Pessoa {
     }
 
     //==============================================================
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -52,22 +64,26 @@ public class Pessoa {
     }
 
     //==============================================================
+
+
     @Override
     public String toString() {
         return "Pessoa{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", altura=" + altura +
                 ", peso=" + peso +
+                ", imc=" + imc +
                 '}';
     }
-//==============================================================
+
+    //==============================================================
     public float calcularIMC(){
         this.imc = this.peso / (altura * altura);
         return this.imc;
     }
 //==============================================================
     public String classificacaoIMC(){
-        String classificacao;
         if (this.imc < 18.5)
             return "Abaixo do Peso";
         else if (this.imc >= 18.5 && this.imc < 24.9)

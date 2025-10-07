@@ -67,12 +67,12 @@
                               <Insets />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Salvar">
+                        <Button mnemonicParsing="false" onAction="#onSalvarIMCClick" prefHeight="30.0" prefWidth="120.0" text="Salvar">
                            <HBox.margin>
                               <Insets left="5.0" right="5.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Carregar Dados">
+                        <Button mnemonicParsing="false" onAction="#onCarregarDadosIMCClick" prefHeight="30.0" prefWidth="120.0" text="Carregar Dados">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -110,13 +110,13 @@
             </VBox>
          </children>
       </HBox>
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tbPessoas" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="282.3999710083008" text="Nome" />
-            <TableColumn prefWidth="88.00006103515625" text="Altura" />
-            <TableColumn prefWidth="92.00003051757812" text="Peso" />
-            <TableColumn prefWidth="101.60000000000002" text="IMC" />
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNome" prefWidth="282.3999710083008" text="Nome" />
+            <TableColumn fx:id="colAltura" prefWidth="88.00006103515625" text="Altura" />
+            <TableColumn fx:id="colPeso" prefWidth="92.00003051757812" text="Peso" />
+            <TableColumn fx:id="colIMC" prefWidth="101.60000000000002" text="IMC" />
         </columns>
       </TableView>
    </children>
