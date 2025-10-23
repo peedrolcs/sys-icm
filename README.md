@@ -1,4 +1,4 @@
-# Projeto de JavaFX - Criando uma Interface - Programação Orientada a Objetos 2
+# Projeto JavaFX - Criando uma Interface - Programação Orientada a Objetos 2
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/peedrolcs/sys-icm/blob/main/LICENSE) 
 
 # Sobre o projeto
@@ -11,7 +11,7 @@ Mais do que apenas a prática visual, o projeto possibilita compreender como a *
 
 # Tecnologias utilizadas
 
-## IDEs e Aplicativos
+## IDEs, Aplicativos e FrameWorks
 - Intellij IDEA Community
 - Scene Builder
 
